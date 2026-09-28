@@ -955,3 +955,25 @@ html.is-loading body > *:not(.loader) { visibility: hidden; }
 .pr-tag-light { color: #f0a58f; border-color: #f0a58f; }
 .btn-cream { background: var(--cream); color: var(--green-deep); }
 .btn-cream:hover { background: #fff; color: var(--green-deep); }
+
+/* product benefits */
+.bf-title { text-align: center; font-family: var(--font-serif); font-size: clamp(30px, 4.6vw, 54px); letter-spacing: .1em; margin-bottom: clamp(40px, 6vw, 72px); }
+.bf-title span { color: #f0a58f; }
+.bf-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.bf-list li { position: relative; padding: 32px 28px 30px; background: rgba(243, 238, 224, .05); border: 1px solid rgba(243, 238, 224, .22); overflow: hidden; }
+.bf-list li:nth-child(2) { transition-delay: .08s; } .bf-list li:nth-child(3) { transition-delay: .16s; } .bf-list li:nth-child(4) { transition-delay: .24s; } .bf-list li:nth-child(5) { transition-delay: .32s; }
+.bf-no {
+  display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: var(--shu); color: var(--cream);
+  border-radius: 4px; font-family: var(--font-serif); font-size: 20px; box-shadow: inset 0 0 0 2px var(--shu), inset 0 0 0 4px var(--cream); transform: rotate(-4deg);
+}
+.bf-list h3 { font-family: var(--font-serif); font-size: clamp(21px, 2.3vw, 26px); line-height: 1.5; letter-spacing: .04em; margin-top: 20px; }
+.bf-list p { margin-top: 14px; opacity: .82; font-size: 15px; line-height: 1.9; }
+.for-list { list-style: none; padding: 0; max-width: 980px; margin: 0 auto; border-top: 1px solid var(--ink); }
+.for-list li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.2fr); gap: 20px; align-items: center; padding: 22px 8px; border-bottom: 1px solid var(--line); }
+.for-list .who { font-size: 15px; color: var(--muted); }
+.for-list .arrow { color: var(--shu); font-size: 20px; }
+.for-list .merit { font-family: var(--font-serif); font-size: clamp(18px, 2vw, 22px); letter-spacing: .04em; }
+@media (max-width: 640px) {
+  .for-list li { grid-template-columns: 1fr; gap: 4px; }
+  .for-list .arrow { display: none; }
+}
